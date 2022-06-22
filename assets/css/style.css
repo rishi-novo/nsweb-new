@@ -1,5 +1,53 @@
 /* Importing Dark theme default styles */
-@import url('theme.css');
+@font-face {
+     font-family: 'Gilroy-Light';
+     src: url('/assets/fonts/Gilroy-Light.ttf');
+}
+
+@font-face {
+     font-family: 'Gilroy-Regular';
+     src: url('/assets/fonts/Gilroy-Regular.ttf');
+}
+
+@font-face {
+     font-family: 'Gilroy-Medium';
+     src: url('/assets/fonts/Gilroy-Medium.ttf');
+}
+
+@font-face {
+     font-family: 'Gilroy-SemiBold';
+     src: url('/assets/fonts/Gilroy-SemiBold.ttf');
+}
+
+@font-face {
+     font-family: 'Gilroy-ExtraBold';
+     src: url('/assets/fonts/Gilroy-ExtraBold.ttf');
+}
+
+:root {
+
+     /* colors */
+     --background: #000;
+     --secondarybg: #000705;
+     --text-main: #fff;
+     --text-light: rgba(255, 255, 255, 0.6);
+
+     /* fonts */
+     --light: 'Gilroy-Light', sans-serif;
+     --regular: 'Gilroy-Regular', sans-serif;
+     --medium: 'Gilroy-Medium', sans-serif;
+     --semibold: 'Gilroy-SemiBold', sans-serif;
+     --bold: 'Gilroy-ExtraBold', sans-serif;
+
+     --space: 'Space Grotesk', sans-serif;
+     --serif: 'Yeseva One', cursive;
+
+     /* Sizes */
+     --textsize: 1.25rem;
+     --headingsize: 2.25rem;
+     --subheadsize: 1.625rem;
+
+}
 
 * {
      box-sizing: border-box;
