@@ -400,8 +400,8 @@ a:focus {
 	height: 80%;
 	align-self: center;
 	position: relative;
-	margin: -40px 0 0 0;
-	right: -20px;
+	margin: -80px 0 0 0;
+	right: -40px;
 }
 
 .nav {
@@ -503,7 +503,6 @@ a:focus {
 }
 
 .content {
-	position: fixed;
 	top: 10rem;
 	left: 0;
 	width: 100%;
@@ -568,8 +567,23 @@ a:focus {
 }
 
 .content__text {
-	font-size: 0.85rem;
+	font-size: 1.2rem;
 }
+
+.content__text h3 {
+	margin-bottom: 1.5rem;
+}
+
+.content__text ul {
+	margin-left: 1.25rem;
+	margin-bottom: 2rem;
+}
+
+.content__text ul li {
+	line-height: 2rem;
+}
+
+
 
 .js .content__title,
 .js .content__subtitle,
@@ -643,10 +657,11 @@ a:focus {
 		font-weight: normal;
 		margin: 0;
 		min-height: 50px;
+		font-size: 1.2rem;
 	}
 
 	.slide__side {
-		color: var(--color-side);
+		color: #e6dee9;
 		position: relative;
 		-webkit-writing-mode: vertical-rl;
 		writing-mode: vertical-rl;
@@ -688,10 +703,16 @@ a:focus {
 	}
 
 	.content__text {
-		font-size: 0.95rem;
-		column-count: 2;
 		column-gap: 2rem;
 		max-width: 600px;
 		text-align: justify;
 	}
+}
+
+.slideshow--previewopen {
+	position: static;
+}
+
+.sliderparent {
+	position: relative;
 }
