@@ -17,17 +17,19 @@ gsap.to({}, 0.016, {
          })
      }
  });
- 
- window.addEventListener("mousemove", function (e) {
+
+// let radius = 40;
+
+window.addEventListener("mousemove", function (e) {
      mouseX = e.clientX;
      mouseY = e.clientY;
      tl = gsap.timeline();
-     tl.to(cursor, {
-          duration: 1,
-          x: mouseX - radius,
-          y: mouseY - radius,
-          ease: Expo.ease
-     })
+     // tl.to(cursor, {
+     //      duration: 1,
+     //      x: mouseX - radius,
+     //      y: mouseY - radius,
+     //      ease: Expo.ease
+     // })
  });
  
  cursorScale.forEach(link => {
@@ -43,3 +45,5 @@ gsap.to({}, 0.016, {
          }
      });
  });
+
+
